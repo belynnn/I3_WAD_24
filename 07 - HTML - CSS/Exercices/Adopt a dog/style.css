@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Singkong";
+    src: url("./assets/fonts/Singkong.otf");
+}
+
+*{
+    /* margin & padding à 0 permet d'enlever les espaces blancs par défaut de l'encadré de la page HTML et entre les éléments (par exemple, entre les h1, h2, h3, h4, h5, h6, p, etc), afin de pouvoir mieux travailler les espacements en aval. */
+    margin: 0;
+    padding: 0;
+    /* Permet de pouvoir garder la taille exacte d'un enfant par rapport à son parent, sans que cette taille ne sois recalculée par le navigateur https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: coral;
+    background-image: url("./assets/images/background-pattern-compressed.png");
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+}
+
+.singkong{
+    font-family: "Singkong", sans-serif;
+}
+
+
+
+/* --------------------------------------- */
+/* HEADER -------------------------------- */
+/* --------------------------------------- */
+/* Sert à appliquer le fond à l'ensemble du nav, qui fait 100% de largeur (il prend TOUTE la largeur de l'écran) */
+nav{
+    background-color: rgb(255, 216, 209);
+}
+
+/* Sert à pouvoir appliquer un comportement dit "responsive", cela permet que chaque éléments enfant au parent .navbar puisse s'adapter en fonction de la résolution de l'écran de l'appareil (ordinateur, tablette, téléphone) */
+.navbar{
+    /* Centre les éléments enfants verticalement, ici, on peut voir que les liens dans la barre de navigation sont bien centrée verticalement par rapport à celle-ci */
+    align-items: center;
+
+    /* Permet de forcer les éléments enfants à adopter un comportement dit "flexible", afin de pouvoir mieux gérer leur emplacement (désolée je n'ai pas plus d'explication, c'est encore un peu flou pour moi également) */
+    display: flex;
+
+    /* Permet de forcer les éléments enfants à passer "à la ligne" lorsque la résolution de l'écran de l'appareil devient plus petit (par exemple, sur un téléphone) */
+    flex-wrap: wrap;
+
+    /* Permet de spécifier aux éléments enfants, d'ajouter un espace entre eux. Ici les éléments enfants de .navbar sont, <img> ET <ul> */
+    justify-content: space-around;
+}
+
+/* Sert à déclarer la taille de l'image du logo */
+.navbar>img{
+    width: 125px;
+}
+
+li{
+    /* Permet d'aligner les éléments enfant sur une même ligne. Nativement, les ul>li sont présentés sous forme de liste verticale, ici elles sont sous forme de liste horizontale */
+    display: inline;
+
+    /* Permet d'ajouter une marge uniquement à gauche de chaque éléments de la liste */
+    margin: 0 0 0 20px;
+}
+/* --------------------------------------- */
+/* HEADER -------------------------------- */
+/* --------------------------------------- */
+
+
+
+/* --------------------------------------- */
+/* MAIN ---------------------------------- */
+/* --------------------------------------- */
+main{
+    /* Permet d'ajouter une marge uniquement au dessus de la boîte main */
+    margin: 30px 0 0 0;
+}
+
+/* Cette boîte sert à créer le fond principal des différentes section du site, ici, un fond gris clair */
+.fond-gris{
+    background-color: rgb(245, 245, 245);
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.170);
+
+    /* Permet de forcer la boîte .fond-gris à être centrée horizontalement */
+    margin: auto;
+
+    /* Permet d'indiquer que la taille de la boîte .fond-gris doit faire uniquement 85% de la taille de son parent main qui lui est à 100% par défaut */
+    width: 85%;
+}
+
+.fond-gris>h1 {
+    font-size: 1.6em;
+
+    /* Permet d'ajouter un espacement interne à son propre élément afin de pouvoir décaler le texte un peu plus bas */
+    padding: 40px;
+}
+
+.boite {
+    /* Vu plus haut, permet de forcer les éléments enfants à adopter un comportement dit "flexible", afin de pouvoir mieux gérer leur emplacement */
+    display: flex;
+
+    /* Vu plus haut, permet de forcer les éléments enfants à passer "à la ligne" lorsque la résolution de l'écran de l'appareil devient plus petit (par exemple, sur un téléphone) */
+    flex-wrap: wrap;
+
+    /* Vu plus haut, mais ici, permet de spécifier aux éléments enfants, de se placer au centre horizontal de son parent */
+    justify-content: center;
+}
+
+.carte {
+    /* Permet d'indiquer que la position de la carte devient "relative", et donc, l'enfant adoptera une position dite "absolute" (désolée, comme pour le flex, c'est assez flou pour moi, je sais juste que "ça fonctionne donc je ne touche pas" :p https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+    position: relative;
+
+    /* width et height, permet d'avoir un carré */
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    font-size: .7em;
+
+    /* Permet d'avoir 60 pixel en haut et en bas de la carte ET 15 pixel à gauche et à droite de la carte, afin de créé un espace ENTRE les cartes ET au dessus et en dessous */
+    margin: 60px 15px;
+}
+
+.carte-description{
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+    padding: 20px;
+
+    /* En corrélation directe avec le position: relative de son parent .carte, déclarer la position absolute permet de pouvoir placer l'élément .carte-description avec les propriétés "top", "left", "right", "bottom". TOP et LEFT étant par défaut 0,0 du parent .carte https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+    position: absolute;
+
+    /* En corrélation directe avec le position: absolute, on indique à l'élément enfant .carte-description de se déplacer de 0 pixel en partant du bas, car on souhaite que cette boîte .carte-description sois tout en bas de la carte, qu'importe sa taille prédéfinie plus haut */
+    bottom: 0;
+
+    /* Permet de spécifier que la taille de l'élément enfant .carte-description doit faire 100% de la taille de son parent (c'est à dire ici, 350 pixel) */
+    width: 100%;
+}
+
+.carte-information{
+    display: flex;
+    justify-content: space-between;
+}
+
+#carte-orange{
+    background-color: rgb(255, 206, 163);
+    background-image: url("./assets/images/dog1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#carte-bleu{
+    background-color: rgb(184, 199, 249);
+    background-image: url("./assets/images/dog2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#carte-saumon{
+    background-color: rgb(255, 169, 187);
+    background-image: url("./assets/images/hotdog.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* --------------------------------------- */
+/* MAIN ---------------------------------- */
+/* --------------------------------------- */
+
+
+
+/* --------------------------------------- */
+/* FOOTER -------------------------------- */
+/* --------------------------------------- */
+footer{
+    background-color: rgb(29, 29, 50);
+    color: white;
+    font-size: .7em;
+}
+
+footer>p {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.footer{
+    display: flex;
+    padding: 30px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid white;
+}
+
+.footer-col:first-of-type img{
+    width: 128px;
+}
+
+.footer-col:last-of-type img{
+    width: 64px;
+    height: 64px;
+}
+
+.footer-col:first-of-type{
+    display: block;
+}
+
+.footer-col{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-subcol {
+    margin: 0 10px;
+}
+/* --------------------------------------- */
+/* FOOTER -------------------------------- */
+/* --------------------------------------- */

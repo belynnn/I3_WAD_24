@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration formulaire</title>
+</head>
+<body>
+    <h1>Démonstration : les formulaires</h1>
+    <p>Exemple de formulaire reprenant une grand partie des inputs possible.</p>
+    <form method="post" action="traitement.php" enctype="multipart/form-data">
+        <div>
+            <label for="family_name">Nom de famille : *</label>
+            <input id="family_name" name="family_name" type="text" placeholder="Nom de famille" required>
+        </div>
+        <div>
+            <label for="nb_passenger">Nombre de passager : *</label>
+            <input id="nb_passenger" name="nb_passenger" type="number" step="2" required>
+        </div>
+        <div>
+            <label for="user_mail">Courriel : *</label>
+            <input id="user_mail" name="user_mail" type="email" required>
+        </div>
+        <div>
+            <label for="user_pswd">Mot de passe : *</label>
+            <input id="user_pswd" name="user_pswd" minlength="5" type="password" required>
+        </div>
+        <button type="submit">Envoyer</button>
+        <button type="reset">Réinitialiser</button>
+    </form>
+
+    <h2>Autre</h2>
+    <form method="get" action="traitement.php">
+        <p>Texte :</p>
+        <input id="text" name="text" type="text">
+        <p>Nombre :</p>
+        <input id="number" name="number" type="number">
+        <p>E-mail :</p>
+        <input id="email" name="email" type="email">
+        <p>Mot de passe :</p>
+        <input id="password" name="password" type="password">
+        <p>Recherche :</p>
+        <input id="search" name="search" type="search">
+        <p>Téléphone :</p>
+        <input id="tel" name="tel" type="tel">
+        <p>URL :</p>
+        <input id="url" name="url" type="url">
+        <p>Fichier :</p>
+        <input id="file" name="file" type="file">
+        <p>Couleur :</p>
+        <input id="color" name="color" type="color">
+        <p>Date :</p>
+        <input id="date" name="date" type="date">
+        <p>Heures :</p>
+        <input id="time" name="time" type="time">
+        <p>Heure locale</p>
+        <input id="datetime-local" name="datetime-local" type="datetime-local">
+    </form>
+</body>
+</html>

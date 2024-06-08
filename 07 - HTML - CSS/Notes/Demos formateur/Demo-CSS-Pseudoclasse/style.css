@@ -1,0 +1,74 @@
+.accordeon{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 256px;
+}
+
+.accordeon-item p{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms 0ms ease-in-out;
+}
+
+.accordeon-item:hover p{
+    max-height: 500px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+li:hover a{
+    color: orange;
+    text-decoration: underline;
+}
+
+/* li:nth-child(2n+1) a */
+li:nth-child(odd) a{
+    color: violet;
+}
+
+/* li:nth-child(2n) a */
+li:nth-child(even) a{
+    color: skyblue;
+}
+
+.accordeon>*:first-child{
+    background-color: rgb(175, 175, 255);
+}
+
+.accordeon>*:last-child{
+    background-color: rgb(255, 175, 155);
+}
+
+article:not(.accordeon *){
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
+    margin: 15px 5px;
+    padding: 15px 25px;
+}
+
+article:target {
+    background-color: gainsboro;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+    margin: 8px 0 2px 0;
+}
+
+article p:first-of-type{
+    font-style: italic;
+}
+
+article p:last-of-type{
+    font-weight: bold;
+}
+
+article p:only-of-type{
+    text-transform: uppercase;
+}

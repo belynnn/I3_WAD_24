@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #eee;
+    color: #111;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+.header{
+    padding: 1.5em;
+    background-color: #eeeeeea4;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+nav li{
+    margin: 0 10px;
+}
+
+nav a{
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    padding: .1em 0 0 0;
+    border-top: 5px solid #3dd15b;
+    border-bottom: 5px solid #3dd15b;
+}
+
+nav .a-courses:hover{
+    padding: .1em 0 0 0;
+    border-top: 5px solid #ef83a2;
+    border-bottom: 5px solid #ef83a2;
+}
+
+nav .a-experiences:hover{
+    padding: .1em 0 0 0;
+    border-top: 5px solid #a383ef;
+    border-bottom: 5px solid #a383ef;
+}
+
+nav .a-hobbies:hover{
+    padding: .1em 0 0 0;
+    border-top: 5px solid #e2ac65;
+    border-bottom: 5px solid #e2ac65;
+}
+
+
+
+
+.main a{
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    padding: .5em;
+    text-transform: uppercase;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.container:not(#firstimpression){
+    padding: 15em 12.5em 0 12.5em;
+}
+
+.content-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10em;
+}
+
+.column{
+    flex: 1 1 25%;
+}
+
+
+/* ~~~~~~~~~~~~~~~~ */
+/* Section à propos */
+/* ~~~~~~~~~~~~~~~~ */
+#firstimpression{
+    background-color: #111;
+    color: #eee;
+    padding: 12.5em 0;
+}
+
+#firstimpression .column{
+    margin: 0 5em;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #444;
+}
+
+.column>h1{
+    font-size: 7em;
+    text-transform: uppercase;
+    margin: 0 .1em;
+}
+
+#firstimpression footer{
+    text-align: center;
+}
+
+.green{
+    padding-bottom: .15em;
+    border-bottom: 3px solid #3dd15b;;
+    text-transform: uppercase;
+}
+
+.green:hover{
+    color: #3dd15b;
+}
+
+#firstimpression footer>p{
+    font-size: 1.2em;
+    margin: 5em 0 1em 0;
+}
+/* ~~~~~~~~~~~~~~~~ */
+/* Section à propos */
+/* ~~~~~~~~~~~~~~~~ */
+
+
+
+
+/* ~~~~~~~~~~~~~~~ */
+/* Section projets */
+/* ~~~~~~~~~~~~~~~ */
+.column>header>h2{
+    font-size: 4em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    text-transform: uppercase;
+    color: #3dd15b;
+    margin: 0 .3em;
+}
+
+.column>main>p{
+    margin: 0 1.2em;
+    font-size: 1.3em;
+}
+
+h3{
+    font-size: 4em;
+    padding-bottom: .2em;
+    text-transform: uppercase;
+}
+
+#projects .column>header{
+    background-color: #000;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#projects .column>header>img{
+    height: 250px;
+}
+
+.column>h4{
+    color: #3dd15b;
+    font-size: 1.5em;
+    padding-bottom: .25em;
+    text-transform: uppercase;
+}
+
+.column>h5{
+    font-size: 1.8em;
+    padding-bottom: .5em;
+}
+
+.column>h6{
+    font-size: .9em;
+}
+
+.column>p{
+    font-size: 1em;
+    text-align: justify;
+}
+
+.column>.little{
+    font-size: .79em;
+}
+
+.column>ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    list-style: none;
+    margin: 1em 0;
+}
+
+.column>ul>li{
+    background-color: #85ef9a;
+    color: #111;
+    font-weight: 600;
+    flex: 1 1 20%;
+    padding: .1em .5em;
+    border-radius: 8px;
+}
+
+.column>ul>li:hover{
+    cursor: pointer;
+    background-color: #3dd15b;
+}
+
+.column>footer{
+    margin: 2em 0 0 0;
+    text-align: right;
+    background-color: #3dd15b;
+    padding: .5em;
+}
+/* ~~~~~~~~~~~~~~~ */
+/* Section projets */
+/* ~~~~~~~~~~~~~~~ */
+
+
+
+.lightgreen{
+    color: #3dd15b;
+}
+
+#courses h4, .salmon{
+    color: #ef838e;
+}
+
+#courses footer{
+    background-color: #ef838e;
+}
+
+#courses ul>li{
+    background-color: #fdbdc4;
+}
+
+#courses ul>li:hover{
+    background-color: #ef838e;
+}
+
+#experiences h4, .violet{
+    color: #a383ef;
+}
+
+#experiences footer{
+    background-color: #a383ef;
+}
+
+#hobbies h4, .orange{
+    color: #e2ac65;
+}
+
+#hobbies footer{
+    background-color: #e2ac65;
+}
+
+.footer{
+    background-color: #111;
+    color: #eee;
+    font-weight: 700;
+    margin-top: 15.5em;
+    padding: 10em 0;
+    text-align: center;
+}

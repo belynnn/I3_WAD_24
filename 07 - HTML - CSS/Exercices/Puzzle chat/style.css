@@ -1,0 +1,49 @@
+table{
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em;
+}
+
+td{
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(171, 205, 136);
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5em;
+}
+
+table{
+    margin: 12.5vw auto;
+    border: 50px solid rgb(94, 110, 77);
+}
+
+table{
+    border-collapse: collapse;
+}
+
+img{
+    display: block;
+} */

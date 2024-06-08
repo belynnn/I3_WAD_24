@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Oxanium";
+    src: url("../assets/fonts/Oxanium-Regular.ttf");
+}
+
+body {
+    color : #fff0ee;
+    background-color: white;
+    background-image: url("../assets/imgs/plum-711499_640.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: -10px -10px;
+}
+
+article {
+    background: url("../assets/imgs/top_corner.png") left top no-repeat,
+                url("../assets/imgs/bottom_corner.png") right bottom no-repeat;
+    background-color: #0a4451c4;
+    backdrop-filter: blur(5px) grayscale();
+    /* opacity: 0.5; */
+    /* width : 80% ; *//*Taille absolue, pas de variation*/
+    /* width : max(420px,80%); *//*Equivalent au min-width + max-width*/
+    min-width: 420px;
+    max-width: 80%;
+    /* height: 60vh ; *//*Taille absolue, pas de variation*/
+    min-height: 60vh;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+p{
+    font-family: "Oxanium";
+}
+
+h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1+p{
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.kalam-light {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+}

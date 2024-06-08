@@ -1,0 +1,22 @@
+body *{
+    border: 1px solid black;
+}
+.logo{
+    width: 20%;
+    height: 15vh;
+}
+.logo img{
+    max-height: 80px;
+    min-height: 64px;
+    height: 15vh;
+}
+nav li{
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+header>*{
+    float: left;
+}

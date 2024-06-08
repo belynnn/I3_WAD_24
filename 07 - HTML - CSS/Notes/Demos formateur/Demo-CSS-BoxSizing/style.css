@@ -1,0 +1,23 @@
+.box{
+    width: 128px;
+    height: 128px;
+    border : 20px solid black;
+}
+
+.left{
+    float: left;
+}
+
+.content-box{
+    box-sizing: content-box; /*valeur par defaut*/
+}
+
+.border-box{
+    box-sizing: border-box;
+}
+
+.clear-float{
+    clear: both;
+    margin: 0;
+    border: 0;
+}

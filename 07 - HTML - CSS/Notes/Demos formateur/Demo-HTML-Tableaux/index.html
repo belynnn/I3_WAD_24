@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration - HTML : Les tableaux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption>Mon tableau</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Professeur 1</th>
+                <th>Professeur 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">Infos</th>
+                <td>Samuel</td>
+                <td>Aude</td>
+            </tr>
+            <tr>
+                <!-- La premiere cellule correspond au débordement de la première ligne -->
+                <td>Legrain</td>
+                <td>Beurive</td>
+            </tr>
+        </tbody>
+        <!-- tfoot>tr>td*3{Conclusion $} -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Conclusion 1</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

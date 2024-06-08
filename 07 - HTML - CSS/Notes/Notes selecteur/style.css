@@ -1,0 +1,90 @@
+/* Sélectionne l'entiereté du document HTML */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 1.08em;
+}
+
+/* Sélectionne la balise body */
+body {
+    margin: 2em;
+}
+
+/* Sélectionne tous les éléments à l'intérieur de la balise nav */
+nav * {
+    color: chocolate;
+    text-decoration: none;
+}
+
+/* Sélectionne toutes les balises li dans le document HTML */
+li {
+    list-style: none;
+}
+
+/* Sélectionne toutes les balises p qui sont voisines d'une balise h1, dans une balise article */
+article h1 ~ p {
+    color: rgb(44, 42, 93);
+    font-size: 1.05em;
+    font-weight: 300;
+}
+
+/* Sélectionne la balise p qui est voisine directe d'une balise h1, dans une balise article */
+article h1 + p {
+    color: rgb(37, 70, 62);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* Sélectionne TOUS les p dans une balise article */
+article p {
+    color: rgb(52, 100, 88);
+}
+
+/* Sélectionne TOUS les éléments HTML à l'intérieur d'une balise p */
+p * {
+    color: rgb(155, 41, 155);
+}
+
+/* Sélectionne tous les span qui sont dans des p, étant eux-même dans l'élément contenant l'id copyright */
+#copyright > p > span {
+    color: aqua;
+}
+
+/* Sélectionne tous les span possèdant une classe .external, qui sont dans des p, étant eux-même dans l'élément contenant l'id copyright */
+#copyright > p > span.external {
+    color: rgb(8, 0, 255);
+}
+
+/* Sélectionne uniquement les éléments ayant une classe .external, à l'intérieur d'un élément ayant un id #medias */
+#medias .external {
+    background-color: chartreuse;
+}
+
+/* Sélectionne uniquement les images présentent dans le footer */
+footer img {
+    width: 32px;
+}
+
+/* Sélectionne uniquement les images ayant l'attribut alt */
+img[alt] {
+    border: 1px solid black;
+}
+
+/* Sélectionne uniquement les images ayant l'attribut alt avec pour valeur "Image de test" */
+img[alt="Image de test"] {
+    background-color: brown;
+}
+
+/* Sélectionne uniquement les images ayant l'attribut alt avec pour valeur "Image lien vers Youtube" */
+img[alt="Image lien vers Youtube"] {
+    background-color: red;
+}
+
+/* Sélectionne les p voisins d'un h1 OU les p voisins d'un h2 OU les h3 */
+h1 + p, h2 + p, h3 {
+    color: orangered;
+}

@@ -1,0 +1,65 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Permet de modifier les éléments ayant une taille dites relative (%, em, rem), 16px ou 1em par défaut */
+html {
+    font-size: 2em;
+}
+
+#pixel h1 {
+    font-size: 40px;
+}
+#pixel p {
+    font-size: 12px;
+}
+
+#percent h1 {
+    font-size: 50%;
+
+}
+#percent p {
+    font-size: 20%;
+
+}
+
+#relative {
+    font-size: .3em;
+}
+#relative h1 {
+    font-size: 3em;
+}
+#relative p {
+    font-size: 1.5rem;
+}
+
+#weight{
+    font-size: .5em;
+}
+p.c {
+    font-weight: 100;
+}
+p.d {
+    font-weight: 200;
+}
+p.t {
+    font-weight: 300;
+}
+p.q {
+    font-weight: 400;
+}
+p.ci {
+    font-weight: 500;
+}
+p.s {
+    font-weight: 600;
+}
+p.se {
+    font-weight: 700;
+}
+p.h {
+    font-weight: 800;
+}
+p.n {
+    font-weight: 900;
+}

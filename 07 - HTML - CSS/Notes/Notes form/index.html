@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration - HTML : Les formulaires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulaires</h1>
+    <form method="post" action="" enctype="multipart/form-data">        
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <div>
+                <label for="demoform-name">Votre nom :</label>
+                <input id="demoform-name" type="text" name="name" placeholder="Nom de famille" autocomplete="name" size="32" autofocus>
+            </div>
+
+            <div>
+                <label for="demoform-given-name">Votre prénom :</label>
+                <input id="demoform-given-name" type="text" name="given-name"  placeholder="Prénom" autocomplete="given-name" size="8">
+            </div>
+
+            <div>
+                <label for="demoform-age">Votre âge :</label>
+                <input id="demoform-age" type="number" name="age" placeholder="Veuillez indiquer votre âge" step="3">
+            </div>
+
+            <div>
+                <label for="demoform-email">Votre adresse e-mail :</label>
+                <input id="demoform-email" type="email" name="email" placeholder="Veuillez indiquer votre courriel" size="64" required>
+            </div>
+
+            <div>
+                <label for="demoform-phone">Votre numéro de téléphone :</label>
+                <input id="demoform-phone" type="tel" name="phone" placeholder="Votre numéro de téléphone" required>
+            </div>
+
+            <div>
+                <label for="demoform-password">Votre mot de passe :</label>
+                <input id="demoform-password" type="password" name="motdepasse" placeholder="Veuillez indiquer votre mot de passe" pattern="(?:[A-Z
+                ]{1,})(?:[a-z]{1,})(?:[0-9]{1,})(?:[\-.=+#@]{1,})" maxlength="32" minlength="8" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informations complémentaires</legend>
+            <div>
+                <label for="demoform-search">Votre recherche :</label>
+                <input id="demoform-search" type="search" name="maRecherche" minlength="5" placeholder="Que cherchez-vous?">
+            </div>
+
+            <div>
+                <label for="demoform-facebook-url">Votre url de profil Facebook :</label>
+                <input id="demoform-facebook-url" type="url" placeholder="Votre profil facebook">
+            </div>
+
+            <div>
+                <label for="demoform-picture">Votre photo de profil :</label>
+                <input id="demoform-picture" type="file" name="picture" required placeholder="Votre photo de profil" accept="image/*" multiple>
+            </div>
+
+            <div>
+                <label for="demoform-favorite-color">Votre couleur préférée :</label>
+                <input id="demoform-favorite-color" type="color" name="favoriteColor" value="#FF0000">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>A cocher</legend>
+            <fieldset>
+                <legend>Consentement</legend>
+                <div class="container-demoform">
+                    <input id="demoform-consent" type="checkbox" name="consent" required>
+                    <label for="demoform-consent">
+                        <p>J'accepte les <a href="#">conditions générales d'utilisation</a>.</p>
+                    </label>
+                </div>
+    
+                <div class="container-demoform">
+                    <input id="demoform-newsletter" type="checkbox" name="newsletter" checked>
+                    <label for="demoform-newsletter">
+                        <p>Je m'inscris à la newsletter.</p>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Genre</legend>
+                <div class="container-demoform-gender">
+                    <input id="demoform-gender-m" type="radio" name="gender">
+                    <label for="demoform-gender-m">Homme</label>
+                </div>
+
+                <div class="container-demoform-gender">
+                    <input id="demoform-gender-f" type="radio" name="gender">
+                    <label for="demoform-gender-f">Femme</label>
+                </div>
+
+                <div class="container-demoform-gender">
+                    <input id="demoform-gender-o" type="radio" name="gender" checked>
+                    <label for="demoform-gender-o">Autre</label>
+                </div>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formation</legend>
+            <div>
+                <label for="demoform-formation">Votre formation : </label>
+                <select name="formation" id="demoform-formation">
+                    <option selected disabled>Veuillez choisir une formation</option>
+                    <option value="web">Frontend Developer</option>
+                    <option value="wad">Web Application Developer</option>
+                    <option value="unity">Game Developer</option>
+                    <option value="ec">Electrician</option>
+                    <option value="da">Database Analyst</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="demoform-langage-prefere">Votre langage de programmation préféré : </label>
+                <select name="langage-prefere" id="demoform-langage-prefere">
+                    <option selected disabled>Veuillez choisir votre langage préféré</option>
+                    <optgroup label="Frontend">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </optgroup>
+                    <optgroup label="Backend">
+                        <option value="php">PHP</option>
+                        <option value="csharp">C#</option>
+                    </optgroup>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <button type="submit">Envoyer</button>
+        <button type="reset">Réinitialiser</button>
+    </form>
+</body>
+</html>

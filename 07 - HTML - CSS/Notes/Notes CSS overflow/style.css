@@ -1,0 +1,15 @@
+* {
+    border: 1px solid black;
+}
+
+article {
+    height: 250px;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+article h1+p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

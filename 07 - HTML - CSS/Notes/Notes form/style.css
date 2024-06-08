@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    border : none;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    width : 128px;
+    margin-bottom: 5px;
+}
+
+input:invalid{
+    border-color: rgb(198, 0, 0);
+}
+
+input:valid{
+    border-color: rgb(0, 180, 0);
+}
+
+input:focus{
+    border-color: rgb(231,231,231);
+}
+
+form>div>label{
+    display: block;
+}
+
+.container-demoform{
+    display: flex;
+}
+
+.container-demoform-gender{
+    display: flex;
+}
+    
+#demoform-consent, #demoform-newsletter{
+    margin-bottom: 1em;
+}
+
+form>div>input:not(#demoform-gender-o, #demoform-gender-m, #demoform-gender-f, #demoform-consent, #demoform-newsletter){
+    display: block;
+    margin-bottom: 2em;
+    width: 30%;
+}
+
+form>div>select {
+    margin-bottom: 2em;
+}
+
+fieldset{
+    padding: 2em;
+    margin: 1em;
+}
+
+legend{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button{
+    padding: 1em 2em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}

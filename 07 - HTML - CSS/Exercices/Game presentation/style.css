@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html {
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background-color: #eaf5e6;
+}
+main {
+    margin: 2em;
+}
+
+h1 {
+    margin: 1em 0 .5em 0;
+}
+h2, h3 {
+    background-color: #4D7E3E;
+    color: #eaf5e6;
+    padding: .5em;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+a {
+    color: #eaf5e6;
+}
+main a {
+    color: #4D7E3E;
+}
+a:hover {
+    color: #9bc941;
+}
+a:visited {
+    color: none;
+}
+
+em {
+    text-decoration: underline;
+}
+
+mark {
+    background: #e4ffbc;
+}
+
+#header {
+    text-align: center;
+    background-color: #4D7E3E;
+    color: #eaf5e6;
+    padding: 1em 0;
+}
+#header p {
+    margin-bottom: 1em;
+}
+
+#logo {
+    float: left;
+    width: 64px;
+    margin-left: 1em;
+}
+#navbar {
+    float: right;
+    margin-right: 1em;
+}
+#main_nav {
+    background-color: #4D7E3E;
+    padding: 1em;
+}
+#main_nav > ul > li {
+    display: inline;
+    padding: 1em;
+}
+#main_nav > ul > li:hover {
+    background-color: #4D7E3E;
+}
+
+
+
+/* WRAPPER */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 60% 40%);
+    grid-auto-rows: 100px;
+    column-gap: 10px;
+    row-gap: 1em;
+}
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.box2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.box3 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+/* WRAPPER */
+
+
+
+/* RANDOM SPECIES */
+#random_species {
+    background-color: #eaf5e6;
+}
+
+#random_species > figure {
+    text-align: center;
+    margin: 1em 0;
+}
+
+#random_species cite, #random_species figcaption {
+    font-size: .8em;
+}
+
+blockquote {
+    margin: 1em 0 0 0;
+    background-color: #d0ddcc;
+    padding: 1em;
+}
+/* RANDOM SPECIES */
+
+
+
+#main_section {
+    margin-top: 15em;
+}
+
+
+
+#summary > ul, section > ul, article > ol {
+    margin-left: 2em;
+}
+
+#footer {
+    padding: 2em;
+    background-color: #4D7E3E;
+    text-align: center;
+    font-weight: 600;
+}
