@@ -10,4 +10,4 @@ while (true) {
     alert(`Vous avez entré : ${entryUser}\nVeuillez réessayer.`);
 };
 
-console.log("GG!!");
+console.log('GG!!');
