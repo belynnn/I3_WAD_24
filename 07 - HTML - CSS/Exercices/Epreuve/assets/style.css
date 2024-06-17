@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FBFBF2;
+    font-weight: 300;
+}
+
+.font-noto{
+    font-family: "Noto Sans";
+}
+
+.font-ysabeau{
+    font-family: "Ysabeau Infant";
+}
+
+
+
+/* HEADER */
+header{
+    background-color: #3E56A7;
+    color: #fff;
+    padding: 1.5em 0;
+}
+    
+nav{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: "Noto Sans";
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    font-size: 1em;
+    list-style-type: none;
+    margin-inline: 1em;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* MAIN */
+main{
+    color: #202945;
+}
+
+section{
+    width: 50%;
+    margin: 1.5em auto;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 1px 1px 15px #20294548;
+    padding: 3em;
+    justify-content: space-between;
+    gap: 4em;
+    border-radius: 10px;
+}
+
+h3{
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border: 10px solid #3E56A7;
+    border-radius: 50%;
+}
+
+section>div>div{
+    margin-block: 1em;
+    margin: 0 1em;
+}
+
+section>div>div>p{
+    margin-block: 1em;
+    font-size: 1em;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: #202945;
+    color: #fff;
+    padding: 2em 5em;
+}
+
+footer>div>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer>div>h3{
+    font-weight: 600;
+    font-size: 2em;
+    padding-left: 350px;
+    margin-bottom: .5em;
+}
+
+input{
+    font-size: .8em;
+}
+
+textarea{
+    font-size: 1em;
+    width: 200px;
+    height: 125px;
+}
+
+button{
+    background-color: #202945;
+    color: #fff;
+    border-radius: 15px;
+    padding: 0 .5em;
+    font-size: .9em;
+}
+
+address{
+    font-size: 1em;
+}
