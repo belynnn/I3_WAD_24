@@ -35,7 +35,7 @@ EXO3_SUBMIT.addEventListener('click', function() {
 
 
 
-//! Récupérez un nombre au clavier et stockez-le dans une variable.
+//! 6)  Récupérez un nombre au clavier et stockez-le dans une variable.
 //  Si le nombre récupéré est plus grand ou égale à 10 affichez “Bravo!”.
 //  Sinon, si il est plus grand que 8 affichez “Pas mal.”
 //  Sinon, si le nombre est plus grand que 5 affichez “Mouais, bof”
@@ -60,6 +60,8 @@ EXO6_SUBMIT.addEventListener('click', function() {
     }
 })
 
+
+
 //! 7)  Écrivez un script qui demande à l'utilisateur un nombre (entre 1 et 10).
 //  Tant qu'il ne rentre pas un chiffre entre 1 et 10, le programme demande à nouveau à l'utilisateur un nombre (entre 1 et 10).
 const EXO7_SUBMIT = document.querySelector('#exo7_submit');
@@ -73,6 +75,8 @@ EXO7_SUBMIT.addEventListener('click', function() {
 
     console.log("#️⃣ EXO_07 :", "✅ Vous avez entré un nombre compris entre 1 et 10 inclus.");
 })
+
+
 
 //! 8)  Écrivez un script qui demande à l'utilisateur un mot de passe.
 //  Si le mot de passe entré n'est pas "Pyth0n" le programme demande à nouveau le mot de passe.
@@ -101,4 +105,54 @@ EXO8_SUBMIT.addEventListener('click', function() {
             disconnect = false;
         }
     }
+})
+
+
+
+//! 9)  Écrivez un programme qui va générer trois nombres aléatoirement (entre 1 et 6).
+//      Ensuite le programme va afficher les trois nombres
+//      Si les trois nombres ne sont pas identiques, il recommence.
+function generateRandomNumber() {
+    return Math.floor(Math.random() * 3) + 1;
+}
+
+const EXO9_SUBMIT = document.querySelector('#exo9_submit');
+
+EXO9_SUBMIT.addEventListener('click', () => {
+    let FIRST_RANDOM_NUMBER = 0;
+    let SECOND_RANDOM_NUMBER = 1;
+    let THIRD_RANDOM_NUMBER = 2;
+    
+    do {
+        alert(`❌ ${FIRST_RANDOM_NUMBER} - ${SECOND_RANDOM_NUMBER} - ${THIRD_RANDOM_NUMBER}`);
+
+        FIRST_RANDOM_NUMBER = generateRandomNumber();
+        SECOND_RANDOM_NUMBER = generateRandomNumber();
+        THIRD_RANDOM_NUMBER = generateRandomNumber();
+
+    } while (FIRST_RANDOM_NUMBER !== SECOND_RANDOM_NUMBER || SECOND_RANDOM_NUMBER !== THIRD_RANDOM_NUMBER);
+
+    alert(`✅ ${FIRST_RANDOM_NUMBER} - ${SECOND_RANDOM_NUMBER} - ${THIRD_RANDOM_NUMBER}`)
+})
+
+
+
+//! 10) Demandez à l'utilisateur d'entrer des nombre jusqu'à ce qu'il donne la valeur 0.
+//      Ensuite, affichez le plus grand et le plus petit nombre que l'utilisateur a donné.
+const EXO10_SUBMIT = document.querySelector('#exo10_submit');
+
+EXO10_SUBMIT.addEventListener('click', function() {
+    
+})
+
+
+
+//! 11) Générez deux nombres aléatoire (entre 0 et 100)
+//      Affichez ces deux nombres en demandant à l'utilisateur d'en donner la somme
+//      Continuez à lui demander tant que la réponse est mauvaise.
+//      À la fin du programme, affichez à l'utilisateur le nombre d'erreurs qu'il a commises.
+const EXO11_SUBMIT = document.querySelector('#exo11_submit');
+
+EXO11_SUBMIT.addEventListener('click', function() {
+    
 })
