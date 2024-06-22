@@ -25,16 +25,22 @@ main{
 }
 
 ol>div{
-    margin-block: 3em;
+    padding-block: 3em;
+    border-bottom: 2px solid #ccc;
 }
 
 h2{
     font-size: 1.25em;
     padding-block: 1em;
+    margin-top: -.7em;
 }
 
-div>p{
-    margin-block: 1em;
+h3{
+    color: red;
+}
+
+div>p {
+    margin: 1em 0 0 0;
 }
 
 button{
@@ -51,9 +57,9 @@ button:hover {
 }
 
 button:disabled, button[disabled]{
-    border: 2px solid #999999;
-    background-color: #cccccc;
-    color: #666666;
+    border: 2px solid #999;
+    background-color: #ccc;
+    color: #666;
 }
 
 footer{

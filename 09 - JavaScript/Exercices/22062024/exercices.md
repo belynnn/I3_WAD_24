@@ -49,7 +49,8 @@
     A chaque fois que le mot commence par "t", affichez-le suivi de "!!!" (rappelez-vous que pour lire un seul caractère d'une chaîne de caractères, on doit lui donner son index (comme pour les listes)).
     A la fin du script, affichez le nombre de mots entrés par l'utilisateur.
 
-15) Écrivez un script qui demande à l'utilisateur un nombre entier entre 1 et 100, redemandez tant que l'utilisateur ne donne pas un entier entre 1 et 100.
+15) Écrivez un script qui demande à l'utilisateur un nombre entier entre 1 et 100,
+    redemandez tant que l'utilisateur ne donne pas un entier entre 1 et 100.
     Ensuite affichez la somme des chiffres de 1 à l'entier donné par l'utilisateur.
     Si l'utilisateur vous donne 10, la somme affichée sera 55 car 55 est la somme des entiers de 1 à 10.
 
@@ -103,7 +104,8 @@
 29) Écrivez une fonction qui ajoute la TVA à un prix donné en paramètre. La TVA sera toujours de 21%.
     Exemple: Si la fonction reçoit 2, elle renverra 2.42 car 2 + 2 * 0.21 = 2.42
 
-30) Écrivez une autre fonction qui reçoit une liste de prix en paramètre et qui renvoie la somme des éléments de cette liste auxquels on ajoute la TVA.
+30) Écrivez une autre fonction qui reçoit une liste de prix en paramètre et qui renvoie la somme des éléments de
+    cette liste auxquels on ajoute la TVA.
     Pour calculer la TVA, utilisez la fonction précédemment créée.
 
 31) Écrivez une fonction qui renvoie une carte au hasard.
