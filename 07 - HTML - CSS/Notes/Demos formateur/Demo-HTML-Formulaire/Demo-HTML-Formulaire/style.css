@@ -1,0 +1,32 @@
+input{
+    border : none;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    width : 128px;
+    margin-bottom: 5px;
+}
+input[type=email]{
+    width: 256px;
+}
+
+input:invalid{
+    border-color: rgb(198, 0, 0);
+    border-bottom-style: dotted;
+}
+
+input:valid:required{
+    border-color: rgb(0, 180, 0);
+}
+
+input:focus{
+    border-color: rgb(231,231,231);
+}
+
+.radio-buttons label{
+    margin: 0 10px;
+}
+
+label:not(.radio-buttons label){
+    display: inline-block;
+    width : 20%;
+}

@@ -1,0 +1,39 @@
+nav * {
+    color : red;
+}
+
+article p{
+    color: blue;
+}
+
+p *{
+    color: blueviolet;
+}
+
+#medias .external{
+    background-color: chartreuse;
+}
+
+#infos, #medias, #copyright{
+    background-color: bisque;
+}
+
+#copyright p span.external {
+    color: yellow;
+}
+
+#copyright>p>span.external {
+    color: orange;
+}
+
+article h1 ~ p{
+    color: aqua;
+}
+
+img[alt]{
+    border: 10px solid black;
+}
+
+img[alt="Youtube"]{
+    border-color: red;
+}

@@ -1,0 +1,66 @@
+#pixel h1{
+    font-size: 40px;
+}
+
+#pixel p{
+    font-size: 12px;
+}
+
+#pourcent h1{
+    font-size: 50%;
+}
+
+#pourcent p{
+    font-size: 20%;
+}
+
+/*
+@media (min-width : 400px) {
+    html{
+        font-size: 2em;
+    }
+}
+*/
+
+#relative{
+    font-size: 0.3em;
+}
+
+#relative h1{
+    font-size: 3em;
+}
+
+#relative p{
+    font-size: 1.5rem;
+}
+
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#bold-100{ font-weight: 100;}
+#bold-200{ font-weight: 200;}
+#bold-300{ font-weight: 300;}
+#bold-400{ font-weight: 400;}
+#bold-500{ font-weight: 500;}
+#bold-600{ font-weight: 600;}
+#bold-700{ font-weight: 700;}
+#bold-800{ font-weight: 800;}
+#bold-900{ font-weight: 900;}
+
+#style-oblique { font-style: oblique; }
+#style-normal { font-style: normal; }
+#style-italic { font-style: italic; }
+
+#align h1 {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline red 3px dotted;
+}
+#align p {
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+}

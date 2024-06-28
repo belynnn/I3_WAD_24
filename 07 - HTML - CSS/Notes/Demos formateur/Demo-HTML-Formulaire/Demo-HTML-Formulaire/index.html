@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration - HTML : Les formulaires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulaires</h1>
+    <form method="post" action="" enctype="multipart/form-data" name="demoform">
+        <fieldset>
+            <legend>Vos informations :</legend>
+            <div>
+                <label for="demoform-name">Nom de famille :</label>
+                <input id="demoform-name" type="text" name="name" 
+                placeholder="Nom de famille" autocomplete="name" size="32" autofocus tabindex="1">
+            </div>
+            <div>
+                <label for="demoform-given-name">Prénom :</label>
+                <input id="demoform-given-name" type="text" name="given-name" 
+                placeholder="Prénom" autocomplete="given-name" size="8">
+            </div>
+            <div>
+                <label for="demoform-age">Votre age:</label>
+                <input id="demoform-age" type="number" name="age" placeholder="Veuillez indiquer votre âge" step="3">
+            </div>
+            <fieldset class="radio-buttons">
+                <legend>Genre :</legend>
+                <input type="radio" name="gender" id="demoform-gender-F" value="F">
+                <label for="demoform-gender-F">Femme</label>
+                <input type="radio" name="gender" id="demoform-gender-M" value="M">
+                <label for="demoform-gender-M">Homme</label>
+                <input type="radio" name="gender" id="demoform-gender-O" value="O">
+                <label for="demoform-gender-O">Autre</label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Contact :</legend>
+            <div>
+                <label for="demoform-email">Votre courriel:</label>
+                <input id="demoform-email" type="email" name="email" placeholder="Veuillez indiquer votre courriel" size="64" required tabindex="2">
+            </div>
+            <div>
+                <label for="demoform-phone">Votre numéro de téléphone:</label>
+                <input id="demoform-phone" type="tel" name="phone" placeholder="Votre numéro de téléphone" required>
+            </div>
+            <div>
+                <label for="demoform-motdepasse">Votre mot de passe:</label>
+                <input id="demoform-motdepasse" type="password" name="motdepasse" placeholder="Veuillez indiquer votre mot de passe"
+                pattern="(?:[A-Z]{1,})(?:[a-z]{1,})(?:[0-9]{1,})(?:[\-.=+#@]{1,})"
+                maxlength="32" minlength="8" required>
+            </div>
+            <div>
+                <label for="demoform-facebookUrl">Votre profil facebook:</label>
+                <input id="demoform-facebookUrl" type="url" placeholder="Votre profil facebook">
+            </div>
+            <div>
+                <label for="demoform-picture">Votre photo de profil:</label>
+                <input id="demoform-picture" type="file" name="picture" required placeholder="Votre photo de profil" accept="image/*" multiple>
+            </div>
+        </fieldset>
+        <div>
+            <label for="demoform-maRecherche">Votre recherche:</label>
+            <input id="demoform-maRecherche" type="search" name="maRecherche" minlength="5" placeholder="Que cherchez-vous?">
+        </div>
+        <div>
+            <label for="demoform-favoriteColor">Votre couleur favorite :</label>
+            <input id="demoform-favoriteColor" type="color" name="favoriteColor" value="#FF0000">
+        </div>
+        <div>
+            <input id="demoform-consent" type="checkbox" name="consent" required>
+            <label for="demoform-consent">
+                <p>J'accepte les <a href="">conditions générales d'utilisation</a> du service que procure cette démonstration.</p>
+            </label>
+        </div>
+        <div>
+            <input id="demoform-newsletter" type="checkbox" name="newsletter" checked>
+            <label for="demoform-newsletter">
+                <p>J'autorise le site à m'envoyer des promotions via email.</p>
+            </label>
+        </div>
+        <div>
+            <label for="demoform-forma">Votre formation : </label>
+            <select id="demoform-forma" name="forma" multiple>
+                <option selected disabled>Veuillez choisir une formation</option>
+                <optgroup label="Batiment Gauche">
+                    <option value="WAD">Web Application Developper</option>
+                    <option value="WEB">Front-end Developper</option>
+                    <option value="UNITY">Game Developper</option>
+                </optgroup>
+                <optgroup label="Batiment Droit">
+                    <option value="EC">Electrician</option>
+                    <option value="DA">Database Analyst</option>
+                </optgroup>
+                <option value="Autre">Autre...</option>
+            </select>
+        </div>
+        <button type="submit"><img src="./assets/imgs/Validate.png"></button>
+        <input type="submit" value="Enregistrer">
+    </form>
+</body>
+</html>

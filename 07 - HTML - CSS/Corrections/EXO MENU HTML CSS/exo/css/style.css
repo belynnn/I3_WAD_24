@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(23, 2, 47);
+    color: white;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  h1, h2, p, footer  {
+    text-align: center;
+  }
+  hr{
+    border: 2px solid white;
+  }
+  
+  #menu {
+    width: 80%;
+    background-color:rgb(39, 39, 39);
+    margin:auto;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  section span {
+    display: block;
+    margin: auto;
+    text-align: center; 
+    font-size: 24px; 
+}
+  
+  .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .item_name{
+    text-align: left;
+    width: 75%;
+  }
+  
+  .item_price {
+    text-align: right;
+    width: 25%;
+  }
+
+  
