@@ -7,8 +7,8 @@
 
 <body>
     <?php
-    include "./checkSession.php";
-    include "./nav.php";
+        include "./checkSession.php";
+        include "./nav.php";
     ?>
     <form id="formHTML">
         <label for="termeRecherche">Rechercher :</label>
