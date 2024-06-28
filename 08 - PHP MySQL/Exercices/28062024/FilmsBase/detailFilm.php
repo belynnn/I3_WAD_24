@@ -46,7 +46,7 @@
                 <div id='divNote' data-moyenne='".$film['moyenne']."'></div>
             </div>");
     print ("<div>Votre note :
-                <div id='divUserNote'></div>
+                <div id='divUserNote' data-usernote='".$film['valeur']."'></div>
             </div>");
     print ('<br>');
     print ("<img alt='Image not found' class='affiche' src='./uploads/". $film['image'] ."'>");
@@ -65,13 +65,33 @@
     });
 
     let divUserNote = document.querySelector('#divUserNote');
-    let menuUserEtoile = jSuites.rating(divUserNote, {
-        value: 0,
-        tooltip: ['Horrible', 'Moyen', 'Plutôt bien', 'Très bien', 'GENIAL'],
-        onchange: function(){
+    let newNote = true;
+    if (divUserNote.data.usernote !== "") {
+        newNote = false;
+    }
 
-        }
+    let menuUserEtoile = jSuites.rating(divUserNote, {
+        value: divUserNote.dataset.usernote,
+        tooltip: ['Horrible', 'Moyen', 'Plutôt bien', 'Très bien', 'GENIAL'],
+        onchange: stockerNote()
     });
+
+    // faire appel AJAX pour insérer / mettre à jour la note de cet utilisateur pour ce film
+    function stockerNote() {
+        console.log("appel");
+        
+        const XHR = new XMLHttpRequest();
+        
+        XHR.onreadystatechange = function() {
+            if (XHR.onreadystatechange == 4) {
+                
+                console.log("fini");
+            };
+        };
+
+        XHR.open("GET", "./noteUpdate.php");
+        XHR.send();
+    }
 </script>
 </body>
 </html>
